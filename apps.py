@@ -1,4 +1,5 @@
-from email.mime import application
 from pywinauto.application import Application
 
-app = Application(backend="uia").start('notepad.exe')
+notepad = Application(backend="uia").start('notepad.exe')
+
+# whatsapp = Application(backend="uia").start('whatsapp.exe')

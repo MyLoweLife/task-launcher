@@ -24,6 +24,9 @@ driver = webdriver.Chrome(r"C:\Program Files (x86)\chromedriver.exe") #<---at th
 #
 driver.get("https://www.twitter.com")
 driver.implicitly_wait(5)
+# Perform action ctrl + A (modifier CONTROL + Alphabet T) to open new tab
+webdriver.ActionChains(driver).key_down(Keys.CONTROL).send_keys("t").perform()
+
 #  .implicityly_wait set an amount of time in seconds for the site elements to load 
 #  before doing something
 driver.implicitly_wait(5)
